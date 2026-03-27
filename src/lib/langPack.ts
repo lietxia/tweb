@@ -139,10 +139,10 @@ namespace I18n {
         const date = new Date();
         date.setHours(0);
         const amText = dateTimeFormat.format(date);
-        amPmCache.am = amText.split(/\s/)[1];
+        amPmCache.am = amText.split(/\s/)[1] || amText.replace(/[\d:\s,\.]+/g, '').trim() || 'AM';
         date.setHours(12);
         const pmText = dateTimeFormat.format(date);
-        amPmCache.pm = pmText.split(/\s/)[1];
+        amPmCache.pm = pmText.split(/\s/)[1] || pmText.replace(/[\d:\s,\.]+/g, '').trim() || 'PM';
       } catch(err) {
         console.error('cannot get am/pm', err);
         amPmCache.am = 'AM';
@@ -173,7 +173,20 @@ namespace I18n {
   }
 
   export function loadLocalLangPack() {
-    const defaultCode = App.langPackCode;
+    const browserToTelegramLangCode: Record<string, string> = {
+      'zh': 'zh-hans-raw',
+      'zh-cn': 'zh-hans-raw',
+      'zh-sg': 'zh-hans-raw',
+      'zh-hans': 'zh-hans-raw',
+      'zh-tw': 'zh-hant-raw',
+      'zh-hk': 'zh-hant-raw',
+      'zh-mo': 'zh-hant-raw',
+      'zh-hant': 'zh-hant-raw',
+      'ja': 'jp-raw',
+      'jp': 'jp-raw'
+    };
+    const nav = navigator.language?.toLowerCase();
+    const defaultCode = (nav && (browserToTelegramLangCode[nav] || browserToTelegramLangCode[nav.split('-')[0]])) || App.langPackCode;
     return Promise.all([
       import('../lang'),
       import('../langSign'),
@@ -282,14 +295,13 @@ namespace I18n {
     try {
       pluralRules = new Intl.PluralRules(lastRequestedNormalizedLangCode);
     } catch(err) {
-      console.error('pluralRules error', err);
       pluralRules = new Intl.PluralRules(lastRequestedNormalizedLangCode.split('-', 1)[0]);
     }
 
     try {
-      pluralRules = new Intl.PluralRules(langPack.lang_code);
+      const bcp47LangCode = langPack.lang_code.replace(/-(?:raw|beta)$/, '');
+      pluralRules = new Intl.PluralRules(bcp47LangCode);
     } catch(err) {
-      console.error('pluralRules error', err);
       pluralRules = new Intl.PluralRules(langPack.lang_code.split('-', 1)[0]);
     }
 

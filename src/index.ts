@@ -484,6 +484,8 @@ function setDocumentLangPackProperties(langPack: LangPackDifference.langPackDiff
   // * fetch lang pack updates
   if(langPack.localVersion !== App.langPackLocalVersion && IS_BETA) {
     I18n.getLangPackAndApply(langPack.lang_code);
+  } else if(langPack.lang_code !== App.langPackCode && langPack.from_version === 0) {
+    I18n.getLangPackAndApply(langPack.lang_code);
   } else {
     checkLangPackForUpdates();
   }
