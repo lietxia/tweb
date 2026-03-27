@@ -124,6 +124,11 @@ export default class AppLanguageTab extends SliderSuperTab {
       p.languages1,
       p.languages2
     ]).then(([languages1, languages2]) => {
+      languages1.push(
+        {_: 'langPackLanguage', name: 'Chinese (Simplified, Beta)', native_name: '简体中文 (Beta)', lang_code: 'zh-hans-beta'} as any,
+        {_: 'langPackLanguage', name: 'Chinese (Traditional, Beta)', native_name: '繁體中文 (Beta)', lang_code: 'zh-hant-beta'} as any,
+        {_: 'langPackLanguage', name: 'Japanese (Beta)', native_name: '日本語 (Beta)', lang_code: 'jp-beta'} as any
+      );
       const rendered: Set<string> = new Set();
       const webLangCodes = languages1.map((language) => language.lang_code);
 

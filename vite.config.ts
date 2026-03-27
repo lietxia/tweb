@@ -36,8 +36,8 @@ const handlebarsPlugin = handlebars({
   context: {
     title: 'Telegram Web',
     description: 'Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.',
-    url: 'https://web.telegram.org/k/',
-    origin: 'https://web.telegram.org/'
+    url: 'https://web.mahjong.eu.org/',
+    origin: 'https://web.mahjong.eu.org/'
   }
 });
 
@@ -158,7 +158,11 @@ export default defineConfig({
     minify: NO_MINIFY ? false : undefined,
     rollupOptions: {
       output: {
-        sourcemapIgnoreList: serverOptions.sourcemapIgnoreList
+        sourcemapIgnoreList: serverOptions.sourcemapIgnoreList,
+        manualChunks: () => 'index',
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name][extname]'
       }
       // input: {
       //   main: './index.html',
@@ -183,9 +187,9 @@ export default defineConfig({
     alias: USE_OWN_SOLID ? {
       'rxcore': resolve(rootDir, SOLID_PATH, 'web/core'),
       'solid-js/jsx-runtime': resolve(rootDir, SOLID_PATH, 'jsx'),
-      'solid-js/web': resolve(rootDir, SOLID_PATH, 'web'),
-      'solid-js/store': resolve(rootDir, SOLID_PATH, 'store'),
-      'solid-js': resolve(rootDir, SOLID_PATH),
+      'solid-js/web': resolve(rootDir, SOLID_PATH, 'web/dist/web.js'),
+      'solid-js/store': resolve(rootDir, SOLID_PATH, 'store/dist/store.js'),
+      'solid-js': resolve(rootDir, SOLID_PATH, 'dist/solid.js'),
       ...ADDITIONAL_ALIASES
     } : ADDITIONAL_ALIASES
   }
