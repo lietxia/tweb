@@ -12,4 +12,4 @@ export TG_API_PROD_DC=1
 export TG_API_SEED="$SEED_PATH"
 export TG_API_DEBUG=1
 export TG_API_PRINT=1
-pnpm test "$TEST_PATH"
+npm test "$TEST_PATH"

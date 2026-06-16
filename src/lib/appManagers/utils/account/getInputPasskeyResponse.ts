@@ -2,7 +2,7 @@ import base64ToBytes from '@helpers/string/base64ToBytes';
 import {InputPasskeyCredential, InputPasskeyResponse} from '@layer';
 
 export default function getInputPasskey(credential: PublicKeyCredential): InputPasskeyResponse {
-  const json: PublicKeyCredentialJSON = credential.toJSON();
+  const json = credential.toJSON() as any;
   const clientData = atob(json.response.clientDataJSON);
   let ret: InputPasskeyResponse;
   if(json.response.attestationObject) {

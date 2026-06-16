@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - img [ref=e2]
+  - generic:
+    - button "Close" [ref=e3] [cursor=pointer]
+    - main [ref=e4]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - generic [ref=e10]: "[TypeScript] Property 'value' does not exist on type 'LangPackString'. Property 'value' does not exist on type 'langPackStringPluralized'."
+              - generic [ref=e11]: /Users/lietxia/Downloads/tweb/src/lib/langPack.ts:251:155
+              - code [ref=e13]: "249 | langPack1.localVersion = App.langPackLocalVersion; 250 | const qrHelp1 = strings.filter(s => s.key === 'Login.QR.Help1').pop(); > 251 | console.log('[DEBUG-GPA] merged strings count=' + strings.length + ', langPack1.lang_code=' + langPack1.lang_code + ', Login.QR.Help1=' + (qrHelp1?.value?.substring(0, 40) || 'NOT_FOUND')); | ^^^^^ 252 | return saveLangPack(langPack1, true); 253 | }); 254 | }"
+            - listitem [ref=e14]:
+              - generic [ref=e15]: "[TypeScript] Property 'value' does not exist on type 'LangPackString'. Property 'value' does not exist on type 'langPackStringPluralized'."
+              - generic [ref=e16]: /Users/lietxia/Downloads/tweb/src/lib/langPack.ts:262:147
+              - code [ref=e18]: "260 | console.log('[DEBUG-SAVE] saveLangPack called, lang_code=' + langPack.lang_code + ', lastRequested=' + lastRequestedLangCode + ', stringsCount=' + (langPack.strings?.length || 0)); 261 | applyLangPack(langPack); > 262 | console.log('[DEBUG-SAVE] applyLangPack done, mapSize=' + strings.size + ', Login.QR.Help1=' + (strings.get('Login.QR.Help1' as LangPackKey)?.value?.substring(0, 40) || 'NOT_FOUND')); | ^^^^^ 263 | return commonStateStorage.set({langPack}).then(() => langPack).catch((err) => { 264 | console.warn('saveLangPack: IDB save failed, but UI already applied:', err); 265 | return langPack;"
+        - listitem:
+          - list

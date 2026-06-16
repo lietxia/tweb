@@ -153,7 +153,10 @@ export function logger(
       // console) yet we still want the full timeline recorded. capture() self-
       // gates on its own DEBUG-backed flag.
       if(!isGroup) capture(logType, prefix, args);
-      return type & logType && console[method](style, dT(), prefix, /* getCallerFunctionName(), */ ...args);
+      if(method === 'assert') {
+        return type & logType && console[method](args[0], style, dT(), prefix, ...args.slice(1));
+      }
+      return type & logType && console[method](style, dT(), prefix, ...args);
     };
   });
 

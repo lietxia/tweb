@@ -899,7 +899,7 @@ export class AppSidebarLeft extends SidebarSlider {
           sessionStorage.set({kz_version: 'Z'}),
           sessionStorage.delete('tgme_sync')
         ]).then(() => {
-          appNavigationController.navigateToUrl('https://web.telegram.org/a/');
+          appNavigationController.navigateToUrl('https://web.mahjong.eu.org/a/');
         });
       },
       separator: App.isMainDomain,
@@ -1633,7 +1633,7 @@ function getVersionLink() {
   });
   const t = document.createElement('span');
   t.classList.add('btn-menu-footer-text');
-  t.textContent = `Telegram Web${App.suffix} ${App.version} (${App.build})`;
+  t.textContent = `tweb${App.suffix} ${App.version} (${App.build})`;
   btnMenuFooter.append(t);
 
   return btnMenuFooter;

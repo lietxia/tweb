@@ -36,11 +36,11 @@ function installDomShims() {
 
   if(typeof target.location === 'undefined') {
     target.location = {
-      href: 'https://web.telegram.org/k/',
-      origin: 'https://web.telegram.org',
+      href: 'https://web.mahjong.eu.org/k/',
+      origin: 'https://web.mahjong.eu.org',
       protocol: 'https:',
-      host: 'web.telegram.org',
-      hostname: 'web.telegram.org',
+      host: 'web.mahjong.eu.org',
+      hostname: 'web.mahjong.eu.org',
       port: '',
       pathname: '/k/',
       search: '',

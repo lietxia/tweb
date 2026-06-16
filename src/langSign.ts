@@ -1,5 +1,5 @@
 const lang = {
-  'Login.Title': 'Sign in to Telegram',
+  'Login.Title': 'Sign in to tweb',
   'Login.PhoneLabel': 'Phone Number',
   'Login.PhoneLabelInvalid': 'Phone Number Invalid',
   'Login.StartText': 'Please confirm your country code\nand enter your phone number.',
@@ -32,9 +32,9 @@ const lang = {
   'Login.ResetEmail.PleaseWait': 'Resetting email, please wait...',
   'Login.ResetEmail.NeedPremium': 'Telegram Premium Required',
   'Login.ResetEmail.NeedPremiumText': 'Due to the high cost of SMS in your country, you need a **Telegram Premium** account to immediately reset this email via an SMS code.\n\nYou can ask a friend to gift a Premium subscription for your account',
-  'Login.Passkey': 'Log in by passkey >',
-  'Login.Passkey.Error': 'Something went wrong',
-  'Login.Passkey.Error.NotFound': 'Used passkey is not tied to any account',
+  'Login.Passkey': '通行密钥登录 >',
+  'Login.Passkey.Error': '出了点问题',
+  'Login.Passkey.Error.NotFound': '使用的通行密钥未关联任何账户',
 
   // * android
   'Code': 'Code',
@@ -51,11 +51,11 @@ const lang = {
   'Login.ContinueOnLanguage': 'Continue in English',
   'Login.QR.Title': 'Log in by QR Code',
   'Login.QR.Help1': 'Open Telegram on your phone',
-  'Login.QR.Help2': 'Go to **Settings** > **Devices** > **Link Desktop Device**',
+  'Login.QR.Help2': 'Go to **Settings** > **Devices** > **Add Device**',
   'Login.QR.Help3': 'Point your phone at this screen to confirm login',
   'Login.QR.Cancel': 'Log in by phone number >',
   'Login.QR.Login': 'Log in by QR Code >',
-  'Login.QR.Subtitle': 'Scan with Telegram app on your phone',
+  'Login.QR.Subtitle': '使用 Telegram 手机应用扫描二维码',
   'PhoneNumber.Code.Fragment.Info': 'Get the code in the Numbers section on [Fragment](%1$@)',
   'PHONE_CODE_INVALID': 'Invalid code',
   'PHONE_CODE_EXPIRED': 'Code expired',

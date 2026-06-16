@@ -1,0 +1,110 @@
+[     629ms] [LOG] %s [0.021] [MP-MTPROTO] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[     629ms] [LOG] %s [0.022] [MP-MTPROTO] set webWorker @ http://localhost:8080/src/lib/logger.ts:106
+[     629ms] [WARNING] %s [0.022] [MP-MTPROTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     630ms] [WARNING] %s [0.022] [MP-MTPROTO] created lock lock-33744651-MTPROTO-1658755517 @ http://localhost:8080/src/lib/logger.ts:126
+[     630ms] [WARNING] %s [0.023] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     630ms] [WARNING] %s [0.023] [MP-CRYPTO] created lock lock-33744651-CRYPTO-1344097089 @ http://localhost:8080/src/lib/logger.ts:126
+[     631ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=fe04226e:711
+[     631ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=fe04226e:711
+[     632ms] [LOG] %s [0.025] [IDB-tweb-common] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[     633ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=fe04226e:711
+[     633ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=fe04226e:711
+[     633ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=fe04226e:711
+[     636ms] [LOG] %s [0.028] [MP-MTPROTO] SW registered ServiceWorkerRegistration @ http://localhost:8080/src/lib/logger.ts:106
+[     636ms] [WARNING] %s [0.029] [MP-SERVICE] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     636ms] [WARNING] %s [0.029] [MP-SERVICE] created lock lock-33744651-SERVICE-672132327 @ http://localhost:8080/src/lib/logger.ts:126
+[     650ms] [LOG] Supported image mime types Set(5) @ http://localhost:8080/src/index.ts:73
+[     650ms] [LOG] %s [0.043] [MP-MTPROTO] Passing environment: {CAN_USE_TRANSFERABLES: true, IS_APPLE_MX: false, IS_CALL_SUPPORTED: true, IS_CANVAS_FILTER_SUPPORTED: true, IS_EMOJI_SUPPORTED: true} @ http://localhost:8080/src/lib/logger.ts:106
+[     662ms] [LOG] %s [0.055] [MP-MTPROTO] got hello from service worker @ http://localhost:8080/src/lib/logger.ts:106
+[     662ms] [WARNING] %s [0.055] [MP-MTPROTO] got service worker port @ http://localhost:8080/src/lib/logger.ts:126
+[    1003ms] [WARNING] %s [0.396] [MP-MTPROTO] mtproto worker received service message port @ http://localhost:8080/src/lib/logger.ts:126
+[    1004ms] [WARNING] %s [0.397] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1004ms] [WARNING] %s [0.397] [MP-CRYPTO] created lock lock-33744651-CRYPTO-1049002002 @ http://localhost:8080/src/lib/logger.ts:126
+[    1004ms] [WARNING] %s [0.397] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1005ms] [WARNING] %s [0.397] [MP-CRYPTO] created lock lock-33744651-CRYPTO-1839116624 @ http://localhost:8080/src/lib/logger.ts:126
+[    1005ms] [WARNING] %s [0.397] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1005ms] [WARNING] %s [0.397] [MP-CRYPTO] created lock lock-33744651-CRYPTO-233711677 @ http://localhost:8080/src/lib/logger.ts:126
+[    1005ms] [LOG] Workers URLs crypto [http://localhost:8080/src/lib/crypto/crypto.worker.ts?worker_file=&type=module, blob:http://localhost:8080/ef66ac63-6a56-4683-bd09-f2e2dde1f6ca, blob:http://localhost:8080/80937d9b-7901-4bce-8778-9ff84321df75, blob:http://localhost:8080/903c3440-0053-4cba-bcfd-b00158637057] @ http://localhost:8080/src/lib/apiManagerProxy.ts:635
+[    3633ms] [ERROR] %s [3.025] [IDB-tweb-common] Error creating/accessing IndexedDB database {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} @ http://localhost:8080/src/lib/logger.ts:126
+[    3633ms] [ERROR] %s [3.026] [AS-tweb-common-session] get error {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} [settings] session @ http://localhost:8080/src/lib/logger.ts:126
+[    3987ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state allDialogsLoaded @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state pinnedOrders @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state contactsListCachedTime @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state updates @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state filtersArr @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state maxSeenMsgId @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.380] [STATE-LOADER] [3.380] start state stateCreatedTime @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state recentEmoji @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state recentCustomEmoji @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state topPeersCache @ http://localhost:8080/src/lib/logger.ts:126
+[    3988ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state recentSearch @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state version @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state build @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state authState @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.381] [STATE-LOADER] [3.381] start state hiddenPinnedMessages @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.381] start state hideChatJoinRequests @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state notifySettings @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state confirmedWebViews @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state hiddenSimilarChannels @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state appConfig @ http://localhost:8080/src/lib/logger.ts:126
+[    3989ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state accountThemes @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state dontShowPaidMessageWarningFor @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start state accountContentSettings @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] start auth @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] end state allDialogsLoaded 2.7000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] end state pinnedOrders 2.3999999999068677 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.382] [STATE-LOADER] [3.382] end state contactsListCachedTime 2.3999999999068677 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.382] end state updates 2.2999999998137355 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state filtersArr 2.2000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state maxSeenMsgId 2.3000000002793968 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state stateCreatedTime 2.2000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state recentEmoji 2.2000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state recentCustomEmoji 2.2000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state topPeersCache 2 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state recentSearch 1.8999999999068677 @ http://localhost:8080/src/lib/logger.ts:126
+[    3990ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state version 1.8999999999068677 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state build 1.6999999997206032 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state authState 1.7000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state hiddenPinnedMessages 1.7000000001862645 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state hideChatJoinRequests 1.8000000002793968 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state notifySettings 1.7999999998137355 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state confirmedWebViews 1.6999999997206032 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.383] [STATE-LOADER] [3.383] end state hiddenSimilarChannels 1.6999999997206032 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] [3.384] end state appConfig 1.7999999998137355 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] [3.384] end state accountThemes 1.6000000000931323 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] [3.384] end state dontShowPaidMessageWarningFor 1.6000000000931323 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] [3.384] end state accountContentSettings 1.6000000000931323 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] [3.384] end auth 1.6000000000931323 @ http://localhost:8080/src/lib/logger.ts:126
+[    3991ms] [WARNING] %s [3.384] [STATE-LOADER] promises 4.399999999906868 @ http://localhost:8080/src/lib/logger.ts:126
+[    3992ms] [LOG] %s [3.385] [STATE-LOADER] state res {allDialogsLoaded: Object, pinnedOrders: Object, contactsListCachedTime: 0, updates: Object, filtersArr: Array(0)} {allDialogsLoaded: Object, pinnedOrders: Object, contactsListCachedTime: 0, updates: Object, filtersArr: Array(0)} @ http://localhost:8080/src/lib/logger.ts:106
+[    3993ms] [WARNING] %s [3.385] [STATE-LOADER] total 5.600000000093132 @ http://localhost:8080/src/lib/logger.ts:126
+[    3993ms] [LOG] %s [3.385] [IDB-tweb] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[    3997ms] [WARNING] %s [3.389] [IDB-tweb] performing idb upgrade from 0 to 7 @ http://localhost:8080/src/lib/logger.ts:126
+[    4016ms] [LOG] %s [3.408] [IDB-tweb] Opened @ http://localhost:8080/src/lib/logger.ts:106
+[    4033ms] [LOG] loadStateForAllAccounts time 46 @ http://localhost:8080/src/lib/appManagers/utils/state/loadState.ts:402
+[    4033ms] [LOG] Elapsed time since unlocked: 46.6591796875 ms allStates loaded @ http://localhost:8080/src/index.ts:342
+[    4034ms] [LOG] Elapsed time since unlocked: 46.97216796875 ms singleInstance started @ http://localhost:8080/src/index.ts:346
+[    4035ms] [LOG] Elapsed time since unlocked: 48.281005859375 ms sent all states (1) @ http://localhost:8080/src/index.ts:353
+[    4056ms] [LOG] Elapsed time since unlocked: 69.447021484375 ms await I18n.getCacheLangPack() @ http://localhost:8080/src/index.ts:363
+[    4058ms] [LOG] Elapsed time since unlocked: 71.343994140625 ms sent all states (2) @ http://localhost:8080/src/index.ts:374
+[    4058ms] [LOG] %s [3.451] [THEME] [setTheme] start, fast=true, coordinates=undefined, animations=true @ http://localhost:8080/src/lib/logger.ts:106
+[    4058ms] [LOG] %s [3.451] [THEME] [setTheme] set colors, silent=true @ http://localhost:8080/src/lib/logger.ts:106
+[    4059ms] [LOG] %s [3.452] [THEME] [setTheme] end @ http://localhost:8080/src/lib/logger.ts:106
+[    4059ms] [LOG] got state, time: 3426.6999999997206 @ http://localhost:8080/src/index.ts:402
+[    4059ms] [LOG] Elapsed time since unlocked: 72.816162109375 ms IMAGE_MIME_TYPES_SUPPORTED_PROMISE @ http://localhost:8080/src/index.ts:404
+[    4060ms] [LOG] Will mount auth page: authStateSignQr 1781570893.106 @ http://localhost:8080/src/index.ts:439
+[    4081ms] [LOG] %s [3.474] [PUSH-API] unsubscribing @ http://localhost:8080/src/lib/logger.ts:106
+[    4083ms] [LOG] %s [3.475] [PUSH-API] no subscription to unsubscribe from @ http://localhost:8080/src/lib/logger.ts:106
+[   10634ms] ReferenceError: Cannot access 'transaction' before initialization
+    at http://localhost:8080/src/lib/files/idb.ts:253:47
+[   19581ms] [LOG] [TRACE] getLangPackAndApply called with: ["zh-hans"] @ :4
+[   20305ms] [LOG] [TRACE] getLangPackAndApply called with: ["zh-hans"] @ :4
+[   20305ms] [LOG] [TRACE] language_change EVENT fired, code: zh-hans @ :21
+[   20306ms] [LOG] [TRACE] language_apply EVENT fired @ :18
+[   20306ms] [LOG] [TRACE] getLangPackAndApply RESOLVED, lang_code: zh-hans version: 295486 @ :8
+[   20311ms] [LOG] [TRACE] language_apply EVENT fired @ :18
+[   20311ms] [LOG] [TRACE] getLangPackAndApply RESOLVED, lang_code: zh-hans version: 295486 @ :8
+[  203729ms] [LOG] [TRACE] language_apply EVENT fired @ :18
+[  274332ms] [LOG] [TRACE] language_apply EVENT fired @ :18

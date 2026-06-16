@@ -437,7 +437,7 @@ Legend:
 | Web app emoji status access | ✅ | `webAppEmojiStatusAccess.tsx` |
 | Web app prepared message | ✅ | |
 | Allowed protocols | ✅ | |
-| Telegram WebView container | ✅ | `telegramWebView.ts` |
+| tweb WebView container | ✅ | `telegramWebView.ts` |
 
 ---
 

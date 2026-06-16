@@ -74,22 +74,32 @@ export async function paintQrCode(options: PaintQrOptions) {
   const canvas = host.lastChild as HTMLCanvasElement;
   if(options.canvasClass) canvas.classList.add(options.canvasClass);
 
-  // qr-code-styling races the image-load against a 1s upper bound — matches the
-  // legacy behaviour so we don't leave the host stuck behind a never-loading logo.
-  let drawingPromise: Promise<void>;
-  if(qrCode._drawingPromise) {
-    drawingPromise = qrCode._drawingPromise;
-  } else {
-    drawingPromise = Promise.race([
-      pause(1000),
-      new Promise<void>((resolve) => {
-        qrCode._canvas._image.addEventListener('load', () => {
+  // Wait for the QR code to be ready by checking if the canvas has content
+  // or using the library's public API if available
+  await new Promise<void>((resolve) => {
+    const checkReady = () => {
+      // Check if canvas has been drawn to (has content)
+      if(canvas.width > 0 && canvas.height > 0) {
+        window.requestAnimationFrame(() => resolve());
+        return;
+      }
+      // Try to find the image element inside the canvas container
+      const img = canvas.querySelector('img');
+      if(img) {
+        if(img.complete) {
           window.requestAnimationFrame(() => resolve());
-        }, {once: true});
-      })
-    ]);
-  }
-  await drawingPromise;
+        } else {
+          img.addEventListener('load', () => {
+            window.requestAnimationFrame(() => resolve());
+          }, {once: true});
+        }
+        return;
+      }
+      // Fallback: wait a bit and check again
+      setTimeout(checkReady, 50);
+    };
+    checkReady();
+  });
 
   return {canvas, qrCode};
 }

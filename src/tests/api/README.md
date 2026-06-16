@@ -15,7 +15,7 @@ auth keys, and feed them to the harness as a JSON seed.
 
 ## Producing a seed
 
-Open `https://web.telegram.org/k/?test=1` (test DC) or `https://web.telegram.org/k/`,
+Open `https://web.mahjong.eu.org/k/?test=1` (test DC) or `https://web.mahjong.eu.org/k/`,
 log in, then run this snippet in DevTools console:
 
 ```js
@@ -45,13 +45,13 @@ Save the output as `tmp/seed.json` (gitignored).
 ## Running
 
 ```bash
-TG_API_TEST=1 TG_API_SEED=./tmp/seed.json pnpm test src/tests/api
+TG_API_TEST=1 TG_API_SEED=./tmp/seed.json npm test src/tests/api
 ```
 
 By default the harness flips `Modes.test = true`. To talk to production DCs
 instead, also set `TG_API_PROD_DC=1` and use a production seed.
 
-When `TG_API_TEST` is unset the api tests are skipped, so `pnpm test` keeps
+When `TG_API_TEST` is unset the api tests are skipped, so `npm test` keeps
 working in environments without credentials.
 
 ## Writing your own test

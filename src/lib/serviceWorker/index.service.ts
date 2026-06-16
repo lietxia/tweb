@@ -3,7 +3,6 @@ import {CACHE_ASSETS_NAME, requestCache} from '@lib/serviceWorker/cache';
 import onStreamFetch, {toggleStreamInUse} from '@lib/serviceWorker/stream';
 import {closeAllNotifications, fillPushObject, onPing, onShownNotification, resetPushAccounts} from '@lib/serviceWorker/push';
 import CacheStorageController from '@lib/files/cacheStorage';
-import {IS_SAFARI} from '@environment/userAgent';
 import ServiceMessagePort from '@lib/serviceWorker/serviceMessagePort';
 import {getLogEntries, setLogBufferEnabled} from '@lib/debug/logsBuffer';
 import listenMessagePort from '@helpers/listenMessagePort';
@@ -269,9 +268,9 @@ watchMtprotoOnDev({connectedWindows, onWindowConnected});
 const onFetch = (event: FetchEvent): void => {
   if(
     import.meta.env.PROD &&
-    !IS_SAFARI &&
+    event.request.method === 'GET' &&
     event.request.url.indexOf(location.origin + '/') === 0 &&
-    event.request.url.match(/\.(js|css|jpe?g|json|wasm|png|mp3|svg|tgs|ico|woff2?|ttf|webmanifest?)(?:\?.*)?$/)
+    !/^\/(stream|d|download|share|ping|rtmp|hls|hls_stream|hls_quality_file|backgrounds)\//.test(new URL(event.request.url).pathname)
   ) {
     return event.respondWith(requestCache(event));
   }

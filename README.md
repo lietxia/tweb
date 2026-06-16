@@ -1,23 +1,25 @@
-## Telegram Web K
-Based on Webogram, patched and improved. Available for everyone here: https://web.telegram.org/k/
+## tweb
+Based on Webogram, patched and improved. Available for everyone here: https://web.mahjong.eu.org/k/
 
 
 ### Developing
 Install dependencies with:
 ```lang=bash
-pnpm install
+npm install
 ```
 This will install all the needed dependencies.
 
 
 #### Running web-server
-Just run `pnpm start` to start the web server and the livereload task.
+Just run `npm start` to start the web server and the livereload task.
 Open http://localhost:8080/ in your browser.
 
 
 #### Running in production
 
-Run `node build` to build the minimized production version of the app. Copy `public` folder contents to your web server.
+Run `npm run build` to build the minimized production version of the app. The build output goes to the `dist` folder as a single bundled file. You can serve the `dist` folder contents with your web server.
+
+For a full build with language processing and version changes, run `node build`.
 
 ### Running in docker
 

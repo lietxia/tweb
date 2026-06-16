@@ -49,8 +49,11 @@ export default function LanguageChangeButton(): JSX.Element {
   const [content, setContent] = createSignal<string>('');
   let suggestedLangCode: string;
 
-  const onLanguageApply = () => setVisible(false);
-  rootScope.addEventListener('language_apply', onLanguageApply, {once: true});
+  const onLanguageApply = () => {
+    setSubmitting(false);
+    setVisible(false);
+  };
+  rootScope.addEventListener('language_apply', onLanguageApply);
   onCleanup(() => rootScope.removeEventListener('language_apply', onLanguageApply));
 
   onMount(async() => {

@@ -1,8 +1,8 @@
-# CLAUDE.md — tweb (Telegram Web K)
+# CLAUDE.md — tweb
 
 ## Project Overview
 
-**tweb** is a full-featured Telegram web client (https://web.telegram.org/k/) built with Solid.js and TypeScript. It implements Telegram's MTProto protocol directly in the browser (no third-party API wrappers). The codebase is large (~100k+ lines excluding vendor), mature, and highly performance-oriented.
+**tweb** is a full-featured Telegram web client (https://web.mahjong.eu.org/k/) built with Solid.js and TypeScript. It implements Telegram's MTProto protocol directly in the browser (no third-party API wrappers). The codebase is large (~100k+ lines excluding vendor), mature, and highly performance-oriented.
 
 Author: Eduard Kuzmenko. License: GPL v3.
 
@@ -15,7 +15,7 @@ Author: Eduard Kuzmenko. License: GPL v3.
 | Build | Vite 5 |
 | CSS | SCSS (sass) |
 | Testing | Vitest |
-| Package Manager | pnpm 9 |
+| Package Manager | npm |
 | Protocol | MTProto (custom implementation) |
 | Storage | IndexedDB + CacheStorage + localStorage |
 | Workers | SharedWorker + ServiceWorker |
@@ -23,11 +23,11 @@ Author: Eduard Kuzmenko. License: GPL v3.
 ## Development
 
 ```bash
-pnpm install
-pnpm start          # Dev server on :8080
-pnpm build          # Production build → dist/
-pnpm test           # Run tests (Vitest)
-pnpm lint           # ESLint on src/**/*.ts
+npm install
+npm start          # Dev server on :8080
+npm run build      # Production build → dist/ (single bundle)
+npm test           # Run tests (Vitest)
+npm run lint       # ESLint on src/**/*.ts
 ```
 
 Debug query params: `?test=1` (test DCs), `?debug=1` (verbose logging), `?noSharedWorker=1` (disable shared worker).
@@ -281,8 +281,8 @@ import {Message, Chat, User, InputPeer} from '@layer';
 ## Running Tests
 
 ```bash
-pnpm test                  # all tests
-pnpm test src/tests/foo    # specific test file
+npm test                  # all tests
+npm test src/tests/foo    # specific test file
 ```
 
 Vitest config: `threads: false`, `globals: true`, jsdom environment, setup in `src/tests/setup.ts`.

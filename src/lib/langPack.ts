@@ -134,12 +134,13 @@ namespace I18n {
         const date = new Date();
         date.setHours(0);
         const amText = dateTimeFormat.format(date);
-        amPmCache.am = amText.split(/\s/)[1];
+        const amResult = amText.split(/\s/)[1];
         date.setHours(12);
         const pmText = dateTimeFormat.format(date);
-        amPmCache.pm = pmText.split(/\s/)[1];
+        const pmResult = pmText.split(/\s/)[1];
+        amPmCache.am = amResult || 'AM';
+        amPmCache.pm = pmResult || 'PM';
       } catch(err) {
-        console.error('cannot get am/pm', err);
         amPmCache.am = 'AM';
         amPmCache.pm = 'PM';
       }
@@ -239,9 +240,8 @@ namespace I18n {
         formatLocalStrings(l.default as any, strings);
       });
 
-      if(!TEST_LOCAL) pushLocal();
+      pushLocal();
       strings = strings.concat(...[langPack1.strings, langPack2.strings].filter(Boolean));
-      if(TEST_LOCAL) pushLocal();
 
       langPack1.strings = strings;
       langPack1.countries = countries;
@@ -254,8 +254,9 @@ namespace I18n {
     langPack.version ||= App.langPackVersion;
 
     if(!apply) return langPack;
-    return commonStateStorage.set({langPack}).then(() => {
-      applyLangPack(langPack);
+    applyLangPack(langPack);
+    return commonStateStorage.set({langPack}).then(() => langPack).catch((err) => {
+      console.warn('saveLangPack: IDB save failed, but UI already applied:', err);
       return langPack;
     });
   }

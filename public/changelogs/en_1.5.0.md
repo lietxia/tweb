@@ -1,4 +1,4 @@
-1️⃣ Introducing support for **Multiple Tabs** – a first for Telegram Web Apps – customizing how you browse Telegram to increase comfort and productivity.
+1️⃣ Introducing support for **Multiple Tabs** – a first for tweb Apps – customizing how you browse Telegram to increase comfort and productivity.
  
 • Open several tabs or browser windows to view multiple chats or channels simultaneously.
 • Organize your Telegram workflow on multiple monitors by moving tabs to different screens.

@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - img [ref=e2]
+  - generic [ref=e4]:
+    - button "" [ref=e5] [cursor=pointer]:
+      - generic: 
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e14]: Log in by QR Code
+        - generic [ref=e15]: Scan with Telegram app on your phone
+      - list [ref=e16]:
+        - listitem [ref=e17]:
+          - generic [ref=e18]: "1"
+          - generic [ref=e19]: Open Telegram on your phone
+        - listitem [ref=e20]:
+          - generic [ref=e21]: "2"
+          - generic [ref=e22]: Go to SettingsDevicesAdd Device
+        - listitem [ref=e23]:
+          - generic [ref=e24]: "3"
+          - generic [ref=e25]: Point your phone at this screen to confirm login
+      - button "Log in by phone number" [ref=e26] [cursor=pointer]:
+        - generic [ref=e28]: Log in by phone number
+      - button "Log in by passkey" [ref=e30] [cursor=pointer]:
+        - generic [ref=e32]: Log in by passkey

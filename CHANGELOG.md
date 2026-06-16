@@ -50,7 +50,7 @@ Significant optimizations were added to smoothly process payments in **any brows
 Dozens of bug fixes were also made to the app – but those can be a bit boring to read. If you ever come across a bug in the app, make sure to let us know on the [Bugs and Suggestions Platform](https://bugs.telegram.org/?tag_ids=40&type=issues&sort=time).
 
 ### 1.5.0 (178)
-1️⃣ Introducing support for **Multiple Tabs** – a first for Telegram Web Apps – customizing how you browse Telegram to increase comfort and productivity.
+1️⃣ Introducing support for **Multiple Tabs** – a first for tweb Apps – customizing how you browse Telegram to increase comfort and productivity.
  
 • Open several tabs or browser windows to view multiple chats or channels simultaneously.
 • Organize your Telegram workflow on multiple monitors by moving tabs to different screens.

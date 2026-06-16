@@ -1,0 +1,150 @@
+[     456ms] [LOG] %s [0.022] [MP-MTPROTO] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[     456ms] [LOG] %s [0.023] [MP-MTPROTO] set webWorker @ http://localhost:8080/src/lib/logger.ts:106
+[     456ms] [WARNING] %s [0.023] [MP-MTPROTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     457ms] [WARNING] %s [0.023] [MP-MTPROTO] created lock lock-1472929-MTPROTO-521496732 @ http://localhost:8080/src/lib/logger.ts:126
+[     457ms] [WARNING] %s [0.024] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     457ms] [WARNING] %s [0.024] [MP-CRYPTO] created lock lock-1472929-CRYPTO-300235960 @ http://localhost:8080/src/lib/logger.ts:126
+[     458ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[     459ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[     460ms] [LOG] %s [0.026] [IDB-tweb-common] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[     461ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[     461ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[     461ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[     464ms] [LOG] %s [0.031] [MP-MTPROTO] SW registered ServiceWorkerRegistration @ http://localhost:8080/src/lib/logger.ts:106
+[     465ms] [WARNING] %s [0.031] [MP-SERVICE] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[     465ms] [WARNING] %s [0.031] [MP-SERVICE] created lock lock-1472929-SERVICE-1104049917 @ http://localhost:8080/src/lib/logger.ts:126
+[     493ms] [LOG] %s [0.060] [MP-MTPROTO] got hello from service worker @ http://localhost:8080/src/lib/logger.ts:106
+[     494ms] [WARNING] %s [0.060] [MP-MTPROTO] got service worker port @ http://localhost:8080/src/lib/logger.ts:126
+[     495ms] [LOG] Supported image mime types Set(5) @ http://localhost:8080/src/index.ts:73
+[     496ms] [LOG] %s [0.062] [MP-MTPROTO] Passing environment: {CAN_USE_TRANSFERABLES: true, IS_APPLE_MX: false, IS_CALL_SUPPORTED: true, IS_CANVAS_FILTER_SUPPORTED: true, IS_EMOJI_SUPPORTED: true} @ http://localhost:8080/src/lib/logger.ts:106
+[    1323ms] [WARNING] %s [0.890] [MP-MTPROTO] mtproto worker received service message port @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.893] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.893] [MP-CRYPTO] created lock lock-1472929-CRYPTO-162072659 @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.893] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.893] [MP-CRYPTO] created lock lock-1472929-CRYPTO-842883596 @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.894] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [WARNING] %s [0.894] [MP-CRYPTO] created lock lock-1472929-CRYPTO-1062024459 @ http://localhost:8080/src/lib/logger.ts:126
+[    1327ms] [LOG] Workers URLs crypto [http://localhost:8080/src/lib/crypto/crypto.worker.ts?worker_file=&type=module, blob:http://localhost:8080/edd938e1-ce04-417c-947c-ffb7489d0b7d, blob:http://localhost:8080/76dff47f-b47b-431c-aa0e-b6c4a9bd19ab, blob:http://localhost:8080/aee04fca-ccb6-4136-a1b8-1049c955d26a] @ http://localhost:8080/src/lib/apiManagerProxy.ts:635
+[    3462ms] [ERROR] %s [3.028] [IDB-tweb-common] Error creating/accessing IndexedDB database {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} @ http://localhost:8080/src/lib/logger.ts:126
+[    3462ms] [ERROR] %s [3.029] [AS-tweb-common-session] get error {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} [settings] session @ http://localhost:8080/src/lib/logger.ts:126
+[    4311ms] [LOG] loadStateForAllAccounts time 0.8999999994412065 @ http://localhost:8080/src/lib/appManagers/utils/state/loadState.ts:402
+[    4312ms] [LOG] Elapsed time since unlocked: 1.6337890625 ms allStates loaded @ http://localhost:8080/src/index.ts:342
+[    4312ms] [LOG] Elapsed time since unlocked: 1.954833984375 ms singleInstance started @ http://localhost:8080/src/index.ts:346
+[    4314ms] [LOG] Elapsed time since unlocked: 3.434814453125 ms sent all states (1) @ http://localhost:8080/src/index.ts:353
+[    4327ms] [LOG] Elapsed time since unlocked: 16.887939453125 ms await I18n.getCacheLangPack() @ http://localhost:8080/src/index.ts:363
+[    4333ms] [LOG] Elapsed time since unlocked: 22.751953125 ms sent all states (2) @ http://localhost:8080/src/index.ts:374
+[    4333ms] [LOG] %s [3.900] [THEME] [setTheme] start, fast=true, coordinates=undefined, animations=true @ http://localhost:8080/src/lib/logger.ts:106
+[    4333ms] [LOG] %s [3.900] [THEME] [setTheme] set colors, silent=true @ http://localhost:8080/src/lib/logger.ts:106
+[    4334ms] [LOG] %s [3.901] [THEME] [setTheme] end @ http://localhost:8080/src/lib/logger.ts:106
+[    4334ms] [LOG] [DEBUG-GPA] getLangPackAndApply called, langCode=en, lastRequested=en @ http://localhost:8080/src/lib/langPack.ts:219
+[    4335ms] [LOG] got state, time: 3874 @ http://localhost:8080/src/index.ts:402
+[    4335ms] [LOG] Elapsed time since unlocked: 24.3798828125 ms IMAGE_MIME_TYPES_SUPPORTED_PROMISE @ http://localhost:8080/src/index.ts:404
+[    4335ms] [LOG] Will mount auth page: authStateSignQr 1781571800.264 @ http://localhost:8080/src/index.ts:439
+[    4341ms] [LOG] %s [3.908] [PUSH-API] unsubscribing @ http://localhost:8080/src/lib/logger.ts:106
+[    4356ms] [LOG] %s [3.923] [PUSH-API] no subscription to unsubscribe from @ http://localhost:8080/src/lib/logger.ts:106
+[    6714ms] [LOG] [DEBUG-GPA] merged strings count=8011, langPack1.lang_code=en, Login.QR.Help1=Open Telegram on your phone @ http://localhost:8080/src/lib/langPack.ts:233
+[    6714ms] [LOG] [DEBUG-SAVE] saveLangPack called, lang_code=en, lastRequested=en, stringsCount=8011 @ http://localhost:8080/src/lib/langPack.ts:241
+[    6716ms] [LOG] [DEBUG-SAVE] applyLangPack done, mapSize=4026, Login.QR.Help1=Open Telegram on your phone @ http://localhost:8080/src/lib/langPack.ts:243
+[   10462ms] ReferenceError: Cannot access 'transaction' before initialization
+    at http://localhost:8080/src/lib/files/idb.ts:253:47
+[   40206ms] [LOG] %s [39.773] [NC] [navigate] NavigateEvent NavigationHistoryEntry @ http://localhost:8080/src/lib/logger.ts:106
+[   41314ms] [LOG] %s [0.390] [MP-MTPROTO] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[   41315ms] [LOG] %s [0.391] [MP-MTPROTO] set webWorker @ http://localhost:8080/src/lib/logger.ts:106
+[   41315ms] [WARNING] %s [0.392] [MP-MTPROTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41315ms] [WARNING] %s [0.392] [MP-MTPROTO] created lock lock-1264495-MTPROTO-1447510660 @ http://localhost:8080/src/lib/logger.ts:126
+[   41316ms] [WARNING] %s [0.393] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41316ms] [WARNING] %s [0.393] [MP-CRYPTO] created lock lock-1264495-CRYPTO-706124493 @ http://localhost:8080/src/lib/logger.ts:126
+[   41317ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   41318ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   41319ms] [LOG] %s [0.395] [IDB-tweb-common] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[   41320ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   41320ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   41321ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   41325ms] [LOG] %s [0.402] [MP-MTPROTO] SW registered ServiceWorkerRegistration @ http://localhost:8080/src/lib/logger.ts:106
+[   41326ms] [WARNING] %s [0.402] [MP-SERVICE] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41326ms] [WARNING] %s [0.402] [MP-SERVICE] created lock lock-1264495-SERVICE-1847191644 @ http://localhost:8080/src/lib/logger.ts:126
+[   41336ms] [LOG] Supported image mime types Set(5) @ http://localhost:8080/src/index.ts?t=1781571836113:73
+[   41338ms] [LOG] %s [0.413] [MP-MTPROTO] Passing environment: {CAN_USE_TRANSFERABLES: true, IS_APPLE_MX: false, IS_CALL_SUPPORTED: true, IS_CANVAS_FILTER_SUPPORTED: true, IS_EMOJI_SUPPORTED: true} @ http://localhost:8080/src/lib/logger.ts:106
+[   41360ms] [LOG] %s [0.437] [MP-MTPROTO] got hello from service worker @ http://localhost:8080/src/lib/logger.ts:106
+[   41361ms] [WARNING] %s [0.437] [MP-MTPROTO] got service worker port @ http://localhost:8080/src/lib/logger.ts:126
+[   41993ms] [WARNING] %s [1.069] [MP-MTPROTO] mtproto worker received service message port @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.071] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.071] [MP-CRYPTO] created lock lock-1264495-CRYPTO-1364740773 @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.071] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.072] [MP-CRYPTO] created lock lock-1264495-CRYPTO-239412326 @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.072] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [WARNING] %s [1.072] [MP-CRYPTO] created lock lock-1264495-CRYPTO-1511905813 @ http://localhost:8080/src/lib/logger.ts:126
+[   41995ms] [LOG] Workers URLs crypto [http://localhost:8080/src/lib/crypto/crypto.worker.ts?worker_file=&type=module, blob:http://localhost:8080/f0a305c1-c418-46da-b47f-1f03c3e68d00, blob:http://localhost:8080/fdaffc37-c330-4e55-87c7-93c0559c095e, blob:http://localhost:8080/34d945d5-9058-452d-9681-79c32546f765] @ http://localhost:8080/src/lib/apiManagerProxy.ts?t=1781571836113:635
+[   44321ms] [ERROR] %s [3.397] [IDB-tweb-common] Error creating/accessing IndexedDB database {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} @ http://localhost:8080/src/lib/logger.ts:126
+[   44321ms] [ERROR] %s [3.397] [AS-tweb-common-session] get error {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} [settings] session @ http://localhost:8080/src/lib/logger.ts:126
+[   44923ms] [LOG] loadStateForAllAccounts time 1 @ http://localhost:8080/src/lib/appManagers/utils/state/loadState.ts:402
+[   44923ms] [LOG] Elapsed time since unlocked: 1.821044921875 ms allStates loaded @ http://localhost:8080/src/index.ts?t=1781571836113:342
+[   44924ms] [LOG] Elapsed time since unlocked: 2.39990234375 ms singleInstance started @ http://localhost:8080/src/index.ts?t=1781571836113:346
+[   44925ms] [LOG] Elapsed time since unlocked: 3.970947265625 ms sent all states (1) @ http://localhost:8080/src/index.ts?t=1781571836113:353
+[   44940ms] [LOG] Elapsed time since unlocked: 18.840087890625 ms await I18n.getCacheLangPack() @ http://localhost:8080/src/index.ts?t=1781571836113:363
+[   44943ms] [LOG] Elapsed time since unlocked: 21.7109375 ms sent all states (2) @ http://localhost:8080/src/index.ts?t=1781571836113:374
+[   44943ms] [LOG] %s [4.020] [THEME] [setTheme] start, fast=true, coordinates=undefined, animations=true @ http://localhost:8080/src/lib/logger.ts:106
+[   44943ms] [LOG] %s [4.020] [THEME] [setTheme] set colors, silent=true @ http://localhost:8080/src/lib/logger.ts:106
+[   44944ms] [LOG] %s [4.021] [THEME] [setTheme] end @ http://localhost:8080/src/lib/logger.ts:106
+[   44945ms] [LOG] [DEBUG-GPA] getLangPackAndApply called, langCode=en, lastRequested=en @ http://localhost:8080/src/lib/langPack.ts?t=1781571836113:219
+[   44945ms] [LOG] got state, time: 3625.2000000001863 @ http://localhost:8080/src/index.ts?t=1781571836113:402
+[   44945ms] [LOG] Elapsed time since unlocked: 23.5810546875 ms IMAGE_MIME_TYPES_SUPPORTED_PROMISE @ http://localhost:8080/src/index.ts?t=1781571836113:404
+[   44946ms] [LOG] Will mount auth page: authStateSignQr 1781571840.875 @ http://localhost:8080/src/index.ts?t=1781571836113:439
+[   44954ms] [LOG] %s [4.030] [PUSH-API] unsubscribing @ http://localhost:8080/src/lib/logger.ts:106
+[   44971ms] [LOG] %s [4.047] [PUSH-API] no subscription to unsubscribe from @ http://localhost:8080/src/lib/logger.ts:106
+[   47202ms] [LOG] [DEBUG-GPA] merged strings count=8011, langPack1.lang_code=en, Login.QR.Help1=Open Telegram on your phone @ http://localhost:8080/src/lib/langPack.ts?t=1781571836113:233
+[   47203ms] [LOG] [DEBUG-SAVE] saveLangPack called, lang_code=en, lastRequested=en, stringsCount=8011 @ http://localhost:8080/src/lib/langPack.ts?t=1781571836113:241
+[   47205ms] [LOG] [DEBUG-SAVE] applyLangPack done, mapSize=4026, Login.QR.Help1=Open Telegram on your phone @ http://localhost:8080/src/lib/langPack.ts?t=1781571836113:243
+[   51321ms] ReferenceError: Cannot access 'transaction' before initialization
+    at http://localhost:8080/src/lib/files/idb.ts:253:47
+[   53515ms] [LOG] %s [12.591] [NC] [navigate] NavigateEvent NavigationHistoryEntry @ http://localhost:8080/src/lib/logger.ts:106
+[   54229ms] [LOG] %s [0.025] [MP-MTPROTO] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[   54230ms] [LOG] %s [0.026] [MP-MTPROTO] set webWorker @ http://localhost:8080/src/lib/logger.ts:106
+[   54230ms] [WARNING] %s [0.027] [MP-MTPROTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54231ms] [WARNING] %s [0.028] [MP-MTPROTO] created lock lock-505328-MTPROTO-1974205988 @ http://localhost:8080/src/lib/logger.ts:126
+[   54232ms] [WARNING] %s [0.029] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54233ms] [WARNING] %s [0.029] [MP-CRYPTO] created lock lock-505328-CRYPTO-404311301 @ http://localhost:8080/src/lib/logger.ts:126
+[   54233ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   54234ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   54235ms] [LOG] %s [0.032] [IDB-tweb-common] constructor @ http://localhost:8080/src/lib/logger.ts:106
+[   54237ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   54237ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   54237ms] [WARNING] computations created outside a `createRoot` or `render` will never be disposed @ http://localhost:8080/node_modules/.vite/deps/solid-js.js?v=551389bb:711
+[   54242ms] [LOG] %s [0.038] [MP-MTPROTO] SW registered ServiceWorkerRegistration @ http://localhost:8080/src/lib/logger.ts:106
+[   54242ms] [WARNING] %s [0.039] [MP-SERVICE] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54250ms] [WARNING] %s [0.046] [MP-SERVICE] created lock lock-505328-SERVICE-1167789446 @ http://localhost:8080/src/lib/logger.ts:126
+[   54270ms] [LOG] %s [0.066] [MP-MTPROTO] got hello from service worker @ http://localhost:8080/src/lib/logger.ts:106
+[   54270ms] [WARNING] %s [0.067] [MP-MTPROTO] got service worker port @ http://localhost:8080/src/lib/logger.ts:126
+[   54271ms] [LOG] Supported image mime types Set(5) @ http://localhost:8080/src/index.ts?t=1781571849422:73
+[   54271ms] [LOG] %s [0.067] [MP-MTPROTO] Passing environment: {CAN_USE_TRANSFERABLES: true, IS_APPLE_MX: false, IS_CALL_SUPPORTED: true, IS_CANVAS_FILTER_SUPPORTED: true, IS_EMOJI_SUPPORTED: true} @ http://localhost:8080/src/lib/logger.ts:106
+[   54915ms] [WARNING] %s [0.712] [MP-MTPROTO] mtproto worker received service message port @ http://localhost:8080/src/lib/logger.ts:126
+[   54919ms] [WARNING] %s [0.716] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [WARNING] %s [0.716] [MP-CRYPTO] created lock lock-505328-CRYPTO-1739570867 @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [WARNING] %s [0.716] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [WARNING] %s [0.716] [MP-CRYPTO] created lock lock-505328-CRYPTO-642161175 @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [WARNING] %s [0.716] [MP-CRYPTO] attaching send port @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [WARNING] %s [0.717] [MP-CRYPTO] created lock lock-505328-CRYPTO-596768205 @ http://localhost:8080/src/lib/logger.ts:126
+[   54920ms] [LOG] Workers URLs crypto [http://localhost:8080/src/lib/crypto/crypto.worker.ts?worker_file=&type=module, blob:http://localhost:8080/a7852f01-b301-4ddc-89c4-9b4baa27068b, blob:http://localhost:8080/8f8cd4c8-038d-4d1a-b934-1f982061f543, blob:http://localhost:8080/50373eb8-b33c-4aed-82a3-770edaaf0fec] @ http://localhost:8080/src/lib/apiManagerProxy.ts?t=1781571849422:635
+[   57236ms] [ERROR] %s [3.033] [IDB-tweb-common] Error creating/accessing IndexedDB database {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} @ http://localhost:8080/src/lib/logger.ts:126
+[   57237ms] [ERROR] %s [3.033] [AS-tweb-common-session] get error {type: IDB_CREATE_TIMEOUT, stack: Error
+    at makeError (http://localhost:8080/src/… http://localhost:8080/src/lib/files/idb.ts:60:21} [settings] session @ http://localhost:8080/src/lib/logger.ts:126
+[   57898ms] [LOG] loadStateForAllAccounts time 0.8999999994412065 @ http://localhost:8080/src/lib/appManagers/utils/state/loadState.ts:402
+[   57899ms] [LOG] Elapsed time since unlocked: 1.64111328125 ms allStates loaded @ http://localhost:8080/src/index.ts?t=1781571849422:342
+[   57899ms] [LOG] Elapsed time since unlocked: 2.22705078125 ms singleInstance started @ http://localhost:8080/src/index.ts?t=1781571849422:346
+[   57901ms] [LOG] Elapsed time since unlocked: 3.81689453125 ms sent all states (1) @ http://localhost:8080/src/index.ts?t=1781571849422:353
+[   57919ms] [LOG] Elapsed time since unlocked: 21.77001953125 ms await I18n.getCacheLangPack() @ http://localhost:8080/src/index.ts?t=1781571849422:363
+[   57922ms] [LOG] Elapsed time since unlocked: 24.839111328125 ms sent all states (2) @ http://localhost:8080/src/index.ts?t=1781571849422:374
+[   57922ms] [LOG] %s [3.719] [THEME] [setTheme] start, fast=true, coordinates=undefined, animations=true @ http://localhost:8080/src/lib/logger.ts:106
+[   57922ms] [LOG] %s [3.719] [THEME] [setTheme] set colors, silent=true @ http://localhost:8080/src/lib/logger.ts:106
+[   57923ms] [LOG] %s [3.720] [THEME] [setTheme] end @ http://localhost:8080/src/lib/logger.ts:106
+[   57924ms] [LOG] [DEBUG-GPA] getLangPackAndApply called, langCode=en, lastRequested=en @ http://localhost:8080/src/lib/langPack.ts?t=1781571849422:219
+[   57924ms] [LOG] got state, time: 3687.5 @ http://localhost:8080/src/index.ts?t=1781571849422:402
+[   57924ms] [LOG] Elapsed time since unlocked: 26.85693359375 ms IMAGE_MIME_TYPES_SUPPORTED_PROMISE @ http://localhost:8080/src/index.ts?t=1781571849422:404
+[   57925ms] [LOG] Will mount auth page: authStateSignQr 1781571853.854 @ http://localhost:8080/src/index.ts?t=1781571849422:439
+[   57947ms] [LOG] %s [3.743] [PUSH-API] unsubscribing @ http://localhost:8080/src/lib/logger.ts:106
+[   57949ms] [LOG] %s [3.746] [PUSH-API] no subscription to unsubscribe from @ http://localhost:8080/src/lib/logger.ts:106

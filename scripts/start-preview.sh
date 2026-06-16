@@ -76,7 +76,7 @@ if [ ! -f "$SEED" ]; then
   # vitest can exit non-zero on a harmless transport-teardown race even when the
   # test passed; the real success signal is whether the seed file was written.
   TG_API_TEST=1 TG_API_PROD_DC=1 TG_API_SEED="$MASTER_SEED" PREVIEW_SEED_OUT="$SEED" \
-    pnpm test src/tests/api/previewAuth || true
+    npm test src/tests/api/previewAuth || true
   rmdir "$LOCK" 2>/dev/null || true
   trap - EXIT
   if [ ! -f "$SEED" ]; then echo "[start-preview] mint failed — $SEED not produced" >&2; exit 1; fi
@@ -92,5 +92,5 @@ fi
 
 echo "[start-preview] id=$ID  port=$PORT  seed=$SEED  no-worker=$NO_WORKER"
 echo "[start-preview] preview: http://localhost:$PORT"
-exec env PREVIEW_SEED="$SEED" TWEB_PREVIEW=1 TWEB_NO_WORKER="$NO_WORKER" pnpm exec vite \
+exec env PREVIEW_SEED="$SEED" TWEB_PREVIEW=1 TWEB_NO_WORKER="$NO_WORKER" npx vite \
   --config vite.preview.config.ts --port "$PORT" --strictPort

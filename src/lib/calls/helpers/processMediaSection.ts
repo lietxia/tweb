@@ -18,7 +18,7 @@ export default function processMediaSection(sdp: SDP, media: SDP['media'][0]) {
   // `passive` (the DTLS *server*), so the Telegram SFU is the DTLS *client*
   // (active) and sends the ClientHello. The server echoes this by answering
   // with setup:active, which makes Chrome (offering actpass) take the passive
-  // role. This matches tdesktop/libtgcalls and Telegram Web A, and holds for
+  // role. This matches tdesktop/libtgcalls and tweb A, and holds for
   // BOTH legacy voice chats and e2e conferences.
   //
   // This used to be `active` for legacy calls (client drives DTLS). That

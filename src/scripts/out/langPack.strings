@@ -111,9 +111,9 @@
 "Contacts.Count_one" = "%d contact";
 "Contacts.Count_other" = "%d contacts";
 "Deactivated.Title" = "Too many tabs...";
-"Deactivated.Subtitle" = "Telegram supports only one active tab with the app.\nClick anywhere to continue using this tab.";
+"Deactivated.Subtitle" = "tweb supports only one active tab with the app.\nClick anywhere to continue using this tab.";
 "Deactivated.Version.Title" = "WebK has updated...";
-"Deactivated.Version.Subtitle" = "Another tab is running a newer version of Telegram.\nClick anywhere to reload this tab.";
+"Deactivated.Version.Subtitle" = "Another tab is running a newer version of tweb.\nClick anywhere to reload this tab.";
 "Deactivated.OtherClient.Title" = "App is inactive...";
 "Deactivated.OtherClient.Subtitle" = "Another app is running.\nClick anywhere to continue using this app.";
 "Discussion.Set.PrivateChannel" = "Any member of this group will be able to see messages in the channel.";
@@ -186,7 +186,7 @@
 "Notifications.Offline" = "Show offline notifications";
 "Notifications.Sound.Section" = "Sound";
 "Notifications.Sound.Effects" = "Sound Effects";
-"Notifications.Default" = "Give Telegram permission to send notifications. You may need to refresh the page to see the changes.";
+"Notifications.Default" = "Give tweb permission to send notifications. You may need to refresh the page to see the changes.";
 "Notifications.Enable" = "Enable Notifications";
 "Notifications.Restricted" = "You have restricted notifications. Reset permission in your browser and try again.";
 "Suggestion.Notifications" = "Never miss a message! %s";
@@ -204,8 +204,8 @@
 "Message.Context.Selection.Forward" = "Forward selected";
 "Message.Context.Selection.Download" = "Download selected";
 "Message.Context.Selection.SendNow" = "Send selected now";
-"Message.Unsupported.Desktop" = "__This message is currently not supported on Telegram Web. Try [getdesktop.telegram.org](https://getdesktop.telegram.org/)__";
-"Message.Unsupported.Mobile" = "__This message is currently not supported on Telegram Web. Try [telegram.org/dl](https://telegram.org/dl/)__";
+"Message.Unsupported.Desktop" = "__This message is currently not supported on tweb. Try [getdesktop.telegram.org](https://getdesktop.telegram.org/)__";
+"Message.Unsupported.Mobile" = "__This message is currently not supported on tweb. Try [telegram.org/dl](https://telegram.org/dl/)__";
 "Checkbox.Enabled" = "Enabled";
 "Checkbox.Disabled" = "Disabled";
 "Error.PreviewSender.CaptionTooLong" = "Caption is too long.";
@@ -274,7 +274,7 @@
 "PushNotification.Action.Mute1d.Mobile" = "Mute for 1 day";
 "PushNotification.Action.Settings.Mobile" = "Alerts settings";
 "PushNotification.Message.NoPreview" = "You have a new message";
-"PushNotification.Message.Refreshing" = "Telegram is syncing in the background...";
+"PushNotification.Message.Refreshing" = "tweb is syncing in the background...";
 "LogOut.Description" = "Are you sure you want to log out?\n\nNote that you can seamlessly use Telegram on all your devices at once.";
 "VoiceChat.DiscussionGroup" = "discussion group";
 "PaymentInfo.CVV" = "CVV Code";
@@ -285,8 +285,8 @@
 "PaymentCard.Error.Incomplete" = "Incomplete card number";
 "LimitReached.Ok" = "OK, GOT IT";
 "Username.Purchase" = "**This username is already taken.** However, it is currently available for purchase. [Learn more…]()";
-"Video.Unsupported.Desktop" = "__Unfortunately, this video can't be played on Telegram Web. Try opening it with our [desktop app](https://getdesktop.telegram.org/) instead.__";
-"Video.Unsupported.Mobile" = "__Unfortunately, this video can't be played on Telegram Web. Try opening it with our [mobile app](https://telegram.org/dl/) instead.__";
+"Video.Unsupported.Desktop" = "__Unfortunately, this video can't be played on tweb. Try opening it with our [desktop app](https://getdesktop.telegram.org/) instead.__";
+"Video.Unsupported.Mobile" = "__Unfortunately, this video can't be played on tweb. Try opening it with our [mobile app](https://telegram.org/dl/) instead.__";
 "Error.RequestPeer.NoRights.Channel" = "Sorry, you can't add bots to this channel.";
 "Error.RequestPeer.NoRights.Group" = "Sorry, you are not allowed to add bots to this group.";
 "JustArgument" = "%@";
@@ -1496,7 +1496,7 @@
 "AddOneMemberForwardMessages" = "Show the last 100 messages to **%1$s**";
 "PinToTopLimitReached2" = "Sorry, you can only pin %1$s to the top in the main list. More chats can be pinned in Chat Folders and your Archive.";
 "FiltersSetupPinAlert" = "Set Up Folders";
-"AppName" = "Telegram";
+"AppName" = "tweb";
 "OK" = "OK";
 "PinFolderLimitReached" = "Sorry, you can't pin any more chats to the top.";
 "Send" = "Send";
@@ -3511,7 +3511,7 @@
 "PasscodeLock.Item.Title" = "Passcode Lock";
 "PasscodeLock.Item.On" = "On";
 "PasscodeLock.Item.Off" = "Off";
-"PasscodeLock.Description" = "When a passcode is set, a lock icon appears above your chat list. Tap it to lock your Telegram.";
+"PasscodeLock.Description" = "When a passcode is set, a lock icon appears above your chat list. Tap it to lock your tweb.";
 "PasscodeLock.TurnOn" = "Turn Passcode On";
 "PasscodeLock.TurnOff" = "Turn Off";
 "PasscodeLock.TurnOff.Title" = "Turn Passcode Off";
@@ -3533,7 +3533,7 @@
 "PasscodeLock.ForgotPasscode.MultipleAccounts" = "Note: if you forget your passcode, you'll need to [log out]() from all your current accounts.";
 "PasscodeLock.WrongPasscode" = "Wrong passcode. Please try again.";
 "PasscodeLock.PasscodeHasBeenSet" = "Passcode has been set.";
-"PasscodeLock.TapToLock" = "Tap to lock Telegram.";
+"PasscodeLock.TapToLock" = "Tap to lock tweb.";
 "PasscodeLock.PasscodeHasBeenChanged" = "Passcode has been changed.";
 "PasscodeLock.PasscodeHasBeenDisabled" = "Passcode has been disabled.";
 "PasscodeLock.NotificationTitle" = "User";
@@ -4168,7 +4168,7 @@
 "CancelPollConfirm.Description" = "Are you sure you want to cancel sending the poll?";
 "CancelPollConfirm.Button" = "Cancel Sending";
 "CancelPollConfirm.Timeout" = "The poll was already sent, you can delete the message instead.";
-"Login.Title" = "Sign in to Telegram";
+"Login.Title" = "Sign in to tweb";
 "Login.PhoneLabel" = "Phone Number";
 "Login.PhoneLabelInvalid" = "Phone Number Invalid";
 "Login.StartText" = "Please confirm your country code\nand enter your phone number.";
@@ -4200,9 +4200,9 @@
 "Login.ResetEmail.PleaseWait" = "Resetting email, please wait...";
 "Login.ResetEmail.NeedPremium" = "Telegram Premium Required";
 "Login.ResetEmail.NeedPremiumText" = "Due to the high cost of SMS in your country, you need a **Telegram Premium** account to immediately reset this email via an SMS code.\n\nYou can ask a friend to gift a Premium subscription for your account";
-"Login.Passkey" = "Log in by passkey >";
-"Login.Passkey.Error" = "Something went wrong";
-"Login.Passkey.Error.NotFound" = "Used passkey is not tied to any account";
+"Login.Passkey" = "通行密钥登录 >";
+"Login.Passkey.Error" = "出了点问题";
+"Login.Passkey.Error.NotFound" = "使用的通行密钥未关联任何账户";
 "Code" = "Code";
 "LoginPassword" = "Password";
 "YourName" = "Your Name";
@@ -4215,11 +4215,11 @@
 "Login.ContinueOnLanguage" = "Continue in English";
 "Login.QR.Title" = "Log in by QR Code";
 "Login.QR.Help1" = "Open Telegram on your phone";
-"Login.QR.Help2" = "Go to **Settings** > **Devices** > **Link Desktop Device**";
+"Login.QR.Help2" = "Go to **Settings** > **Devices** > **Add Device**";
 "Login.QR.Help3" = "Point your phone at this screen to confirm login";
 "Login.QR.Cancel" = "Log in by phone number >";
 "Login.QR.Login" = "Log in by QR Code >";
-"Login.QR.Subtitle" = "Scan with Telegram app on your phone";
+"Login.QR.Subtitle" = "使用 Telegram 手机应用扫描二维码";
 "PhoneNumber.Code.Fragment.Info" = "Get the code in the Numbers section on [Fragment](%1$@)";
 "PHONE_CODE_INVALID" = "Invalid code";
 "PHONE_CODE_EXPIRED" = "Code expired";

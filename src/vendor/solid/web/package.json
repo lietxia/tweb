@@ -1,7 +1,7 @@
 {
   "name": "solid-js/web",
-  "main": "./dist/server.cjs",
-  "module": "./dist/server.js",
+  "main": "./dist/web.cjs",
+  "module": "./dist/web.js",
   "unpkg": "./dist/web.cjs",
   "types": "./types/index.d.ts",
   "type": "module",

@@ -4,7 +4,6 @@ import solidPlugin from 'vite-plugin-solid';
 // @ts-ignore no type declarations
 import handlebars from 'vite-plugin-handlebars';
 import basicSsl from '@vitejs/plugin-basic-ssl';
-import {visualizer} from 'rollup-plugin-visualizer';
 import checker from 'vite-plugin-checker';
 // import devtools from 'solid-devtools/vite'
 import autoprefixer from 'autoprefixer';
@@ -34,10 +33,10 @@ if(isDEV) {
 
 const handlebarsPlugin = handlebars({
   context: {
-    title: 'Telegram Web',
-    description: 'Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.',
-    url: 'https://web.telegram.org/k/',
-    origin: 'https://web.telegram.org/'
+    title: 'tweb',
+    description: 'tweb is a cloud-based mobile and desktop messaging app with a focus on security and speed.',
+    url: 'https://web.mahjong.eu.org/k/',
+    origin: 'https://web.mahjong.eu.org/'
   }
 });
 
@@ -46,13 +45,13 @@ const USE_SIGNED_CERTS = USE_SSL && true;
 const USE_SELF_SIGNED_CERTS = USE_SSL && false;
 
 // * mkdir certs; cd certs
-// * mkcert web.telegram.org
-// * chmod 644 web.telegram.org-key.pem
+// * mkcert web.mahjong.eu.org
+// * chmod 644 web.mahjong.eu.org-key.pem
 // * nano /etc/hosts
-// * 127.0.0.1 web.telegram.org
-const host = USE_SSL ? 'web.telegram.org' : 'localhost';
+// * 127.0.0.1 web.mahjong.eu.org
+const host = USE_SSL ? 'web.mahjong.eu.org' : 'localhost';
 
-// HTTP/2 for `pnpm start`. Vite serves dev modules unbundled — one request per module —
+// HTTP/2 for `npm start`. Vite serves dev modules unbundled — one request per module —
 // and over http/1.1 the browser's ~6-connections-per-origin cap serialises the hundreds
 // of module requests into a slow waterfall (lots of "pending"). Enabling https flips the
 // dev server to HTTP/2, which multiplexes them all over one connection and kills the
@@ -148,14 +147,7 @@ export default defineConfig({
     }),
     solidPlugin(),
     handlebarsPlugin as any,
-    USE_SELF_SIGNED_CERTS ? basicSsl(BASIC_SSL_CONFIG) : undefined,
-    // Only emit the bundle treemap (stats.html) when explicitly analyzing (ANALYZE=1):
-    // it adds build time and writes a ~1.3MB file that otherwise gets globbed into the
-    // dep scan. Run `ANALYZE=1 pnpm build` to generate it.
-    process.env.ANALYZE ? visualizer({
-      gzipSize: true,
-      template: 'treemap'
-    }) : undefined
+    USE_SELF_SIGNED_CERTS ? basicSsl(BASIC_SSL_CONFIG) : undefined
   ].filter(Boolean),
   test: {
     // include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
@@ -163,7 +155,7 @@ export default defineConfig({
       '**/node_modules/**',
       '**/dist/**',
       // git worktrees live here with their own copies of every test file —
-      // without this, `pnpm test <pattern>` runs each match N+1 times at once
+      // without this, `npm test <pattern>` runs each match N+1 times at once
       '**/.claude/**',
       '**/cypress/**',
       '**/.{idea,git,cache,output,temp}/**',
@@ -191,25 +183,27 @@ export default defineConfig({
   // public/*.js build artifacts with merge-conflict markers) aborts the whole scan
   // and disables dependency pre-bundling — making cold dev loads slow and reload-prone.
   optimizeDeps: {
-    entries: ['index.html']
+    entries: ['index.html'],
+    exclude: USE_OWN_SOLID ? ['solid-js'] : []
   },
   build: {
     target: 'es2020',
-    sourcemap: true,
-    assetsDir: '',
-    copyPublicDir: false,
+    outDir: 'dist',
+    sourcemap: false,
+    assetsDir: 'assets',
+    copyPublicDir: true,
     emptyOutDir: true,
-    minify: NO_MINIFY ? false : undefined,
+    minify: NO_MINIFY ? false : true,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
-        sourcemapIgnoreList: serverOptions.sourcemapIgnoreList
+        sourcemapIgnoreList: serverOptions.sourcemapIgnoreList,
+        entryFileNames: 'app.js',
+        chunkFileNames: 'app.js',
+        assetFileNames: 'app.[ext]',
+        codeSplitting: false
       }
-      // input: {
-      //   main: './index.html',
-      //   sw: './src/index.service.ts'
-      // }
     }
-    // cssCodeSplit: true
   },
   worker: {
     format: 'es'
@@ -223,13 +217,12 @@ export default defineConfig({
     }
   },
   resolve: {
-    // conditions: ['development', 'browser'],
     alias: USE_OWN_SOLID ? {
       'rxcore': resolve(rootDir, SOLID_PATH, 'web/core'),
       'solid-js/jsx-runtime': resolve(rootDir, SOLID_PATH, 'jsx'),
-      'solid-js/web': resolve(rootDir, SOLID_PATH, 'web'),
-      'solid-js/store': resolve(rootDir, SOLID_PATH, 'store'),
-      'solid-js': resolve(rootDir, SOLID_PATH),
+      'solid-js/web': resolve(rootDir, SOLID_PATH, isDEV ? 'web/dist/dev.js' : 'web/dist/web.js'),
+      'solid-js/store': resolve(rootDir, SOLID_PATH, isDEV ? 'store/dist/dev.js' : 'store/dist/store.js'),
+      'solid-js': resolve(rootDir, SOLID_PATH, isDEV ? 'dist/dev.js' : 'dist/solid.js'),
       ...ADDITIONAL_ALIASES
     } : ADDITIONAL_ALIASES
   }

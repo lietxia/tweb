@@ -9,7 +9,7 @@ const solidPackagePath = path.join(solidPath, 'packages/solid');
 
 const json = require(path.join(solidPackagePath, 'package.json'));
 
-execSync(`pnpm run build`, {
+execSync(`npm run build`, {
   cwd: solidPath
 });
 
